@@ -1,13 +1,20 @@
 import React from "react";
+
 import { NavigationBar } from "../Navigation";
 import { FilterContent } from "../Filter";
-import { Card } from "../Card/index.jsx";
+import { Section } from "../Sections";
+import { CardContainer } from "../CardContainer";
 
 const Main = () => {
   return (
     <>
-      <NavigationBar />
-      <FilterContent />
+      <main className="main">
+        <NavigationBar />
+        <FilterContent />
+        <Section title="Trending">
+          <CardContainer />
+        </Section>
+      </main>
     </>
   );
 };
