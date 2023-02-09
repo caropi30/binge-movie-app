@@ -1,0 +1,15 @@
+@import "../../scss/base/typography.scss";
+@import "../../scss/utilities/variables.scss";
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $lato;
+    font-color: $pure-white;
+    background-color: $dark-blue;
+}

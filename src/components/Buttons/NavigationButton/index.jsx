@@ -1,9 +1,9 @@
 import React from "react";
-import "./index.module.scss";
+import "./index.scss";
 
-const NavButton = ({ text, href, icon }) => {
+const NavButton = ({ text, href, icon, classN }) => {
   return (
-    <button type="button" className="nav__button">
+    <button type="button" className={classN}>
       {text}
       {icon}
       <a href={href}></a>
