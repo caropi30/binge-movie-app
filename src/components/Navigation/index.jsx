@@ -16,11 +16,10 @@ const NavigationBar = () => {
     <>
       <div className="nav">
         <div className="nav-first">
-          <div className="nav-first--firstBox">
-            <NavButton icon={LogoMenuIcon("#FC4747")} />
-          </div>
-          <div className="nav-first--secondBox">
-            <NavButton
+          <NavButton icon={LogoMenuIcon("#FC4747")} />
+        </div>
+        <div className="nav-second">
+          <NavButton
               classN="nav-first--secondBox-btn"
               icon={MainMenuIcon("#5A698F")}
             />
@@ -36,12 +35,11 @@ const NavigationBar = () => {
               classN="nav-first--secondBox-btn"
               icon={BookedMenuIcon("#5A698F")}
             />
-          </div>
         </div>
-        <div className="nav-second">
+        <div className="nav-third">
           <UserButton classN="nav-second--usr-btn" src={usrImg} />
         </div>
-      </div>
+        </div>
     </>
   );
 };

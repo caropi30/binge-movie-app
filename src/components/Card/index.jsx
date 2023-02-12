@@ -1,16 +1,16 @@
 import React from "react";
-import "./index.scss";
+import classnames from "classnames";
+import './index.scss'
 
-const Card = ({ year, category, rating, title, src }) => {
-  //let cx = classNames.bind(styles);
-
+const Card = ({ show }) => {
+  const {thumbnail, isTrending, year, rating, category, title} = show
   return (
     <>
-      <div className="card">
+      <div className={classnames('card')}>
         <div className="card-img">
-          <img src={src} />
+          <img src={thumbnail} />
         </div>
-        <div className="card-info">
+        <div className={classnames("card-info", {'card-trending': isTrending})}>
           <div>
             <p>{year}</p>
             <p>{rating}</p>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Section = ({ title, classN, content }) => {
+const Section = ({ title, classN, content, children }) => {
   return (
     <>
       <section className={classN}>

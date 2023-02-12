@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.scss";
 import { Card } from "../Card/index";
 import { shows } from "../../seed-data/data";
 
@@ -8,11 +9,12 @@ const CardContainer = () => {
       {shows.map((show) => {
         return (
           <Card
-            src={show.thumbnail}
-            category={show.category}
-            year={show.year}
-            rating={show.rating}
-            title={show.title}
+            show={show}
+            // src={show.thumbnail}
+            // category={show.category}
+            // year={show.year}
+            // rating={show.rating}
+            // title={show.title}
           />
         );
       })}
