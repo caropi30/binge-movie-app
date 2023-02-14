@@ -6,9 +6,8 @@
     display: flex;
     background-color: $semi-dark-blue;
     border-radius: 10px;
-    width: 95%;
-    margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
     &-first,  &-second,  &-third {
       button{
         background-color: transparent;
@@ -17,7 +16,7 @@
     &-second{
       display: flex;
       gap: 0;
-      padding: 0 1.5rem;
+      padding: 0 1.2rem;
     }
    
   }
