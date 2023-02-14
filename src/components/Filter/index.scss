@@ -6,12 +6,12 @@
     .filter  {
         display: flex;
         align-items: center;
-        width: 95%;
         height: 50px;
         margin: 1.3rem auto;
+            padding: 0.5rem;
         .svg{
             width: 30px;
-    height: 30px;
+            height: 30px;
         }
         &-input {
             background-color: transparent;
@@ -29,7 +29,33 @@
 }
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .filter {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin: 1.3rem auto;
+            padding: 0.5rem;
+    
+            .svg {
+                width: 30px;
+                height: 30px;
+            }
+    
+            &-input {
+                background-color: transparent;
+                border: none;
+                margin-left: 1.5rem;
+                width: 100%;
+                color: $pure-white;
+                font-family: $lato;
+                font-size: $medium-font;
+                outline: none;
+    
+    
+            }
+        }
+}
 
 @media (min-width: 1200px) {
     

@@ -1,0 +1,19 @@
+@import "../../scss/base/reset.scss";
+@import "../../scss/base/typography.scss";
+@import "../../scss/utilities/variables.scss";
+
+.trending{
+    width: 95vw;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .trending, .recomended{
+        padding: 0 .3rem;
+        h2{
+            font-size: $large-font;
+            font-weight: $light;
+        }
+    }
+}

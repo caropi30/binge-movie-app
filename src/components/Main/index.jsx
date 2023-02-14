@@ -9,8 +9,8 @@ const Main = () => {
     <>
       <main className="main">
         <FilterContent />
-        <Section title="Trending">
-        </Section>
+        <Section classN="trending" title="Trending"></Section>
+        <Section classN="recomended" title="Recomended for you"></Section>
       </main>
     </>
   );

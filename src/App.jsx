@@ -1,8 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import "./scss/app/app.scss";
 import { Main } from "./components/Main";
-import {Header} from "./components/Header"
-import {NavigationBar} from "./components/Navigation"
+import { Header } from "./components/Header";
+import { NavigationBar } from "./components/Navigation";
 
 function App() {
   return (
