@@ -20,26 +20,26 @@ const NavigationBar = () => {
         </div>
         <div className="nav-second">
           <NavButton
-              classN="nav-first--secondBox-btn"
-              icon={MainMenuIcon("#5A698F")}
-            />
-            <NavButton
-              classN="nav-first--secondBox-btn"
-              icon={FilmMenuIcon("#5A698F")}
-            />
-            <NavButton
-              classN="nav-first--secondBox-btn"
-              icon={TvMenuIcon("#5A698F")}
-            />
-            <NavButton
-              classN="nav-first--secondBox-btn"
-              icon={BookedMenuIcon("#5A698F")}
-            />
+            classN="nav-second--secondBox-btn"
+            icon={MainMenuIcon("#5A698F")}
+          />
+          <NavButton
+            classN="nav-second--secondBox-btn"
+            icon={FilmMenuIcon("#5A698F")}
+          />
+          <NavButton
+            classN="nav-second--secondBox-btn"
+            icon={TvMenuIcon("#5A698F")}
+          />
+          <NavButton
+            classN="nav-second--secondBox-btn"
+            icon={BookedMenuIcon("#5A698F")}
+          />
         </div>
         <div className="nav-third">
-          <UserButton classN="nav-second--usr-btn" src={usrImg} />
+          <UserButton classN="nav-third--usr-btn" src={usrImg} />
         </div>
-        </div>
+      </div>
     </>
   );
 };

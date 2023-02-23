@@ -6,7 +6,7 @@ const Section = ({ title, classN, content, children }) => {
     <>
       <section className={classN}>
         <h2>{title}</h2>
-        <div className={classN}>{children}</div>
+        {children}
       </section>
     </>
   );

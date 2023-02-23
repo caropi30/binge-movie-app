@@ -247,7 +247,7 @@ export const shows = [
     plot: 'Vikings: Valhalla" begins in the early 11th century and chronicles the legendary adventures of some of the most famous Vikings who ever lived: Leif Eriksson, Freydis Eriksdotter, Harald Hardrada, and the Norman King William the Conqueror. These men and women blaze a path as they fight for survival in the ever-changing, evolving world.',
   },
   {
-    title: "The Crimes of the Academia",
+    title: "The Pale Blue Eye",
     thumbnail:
       "https://res.cloudinary.com/alais29/image/upload/v1675285127/bingeMovies/the-pale-blue-eyes_tagkoh.jpg",
     year: 2022,
