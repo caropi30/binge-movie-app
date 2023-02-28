@@ -5,6 +5,8 @@ import { Section } from "../Sections";
 import { CardContainer } from "../CardContainer";
 
 const Main = () => {
+  const [isTrending, setIsTrending] = "";
+  
   return (
     <>
       <main className="main">
