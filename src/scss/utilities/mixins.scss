@@ -18,3 +18,17 @@
 @mixin h-100{
     height: 100%;
 }
+
+@mixin d-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+@mixin d-grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+@mixin d-grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}

@@ -1,6 +1,6 @@
 @import "../../scss/base/reset.scss";
 @import "../../scss/utilities/variables.scss";
-
+@import "../../scss/utilities/mixins.scss";
 @media (min-width: 200px) and (max-width: 990px) {
   .nav {
     display: flex;
@@ -18,8 +18,7 @@
       }
     }
     &-second {
-      display: flex;
-      flex-direction: column;
+     @include d-flex-row;
       align-items: center;
       gap: 0;
       padding: 0 1.2rem;
