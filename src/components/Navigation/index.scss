@@ -1,6 +1,7 @@
 @import "../../scss/base/reset.scss";
 @import "../../scss/utilities/variables.scss";
 @import "../../scss/utilities/mixins.scss";
+
 @media (min-width: 200px) and (max-width: 990px) {
   .nav {
     display: flex;

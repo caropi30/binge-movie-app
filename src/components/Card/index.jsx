@@ -3,7 +3,7 @@ import classnames from "classnames";
 import "./index.scss";
 
 const Card = ({ show }) => {
-  const { thumbnail, isTrending, year, rating, category, title, classN } = show;
+  const { id,thumbnail, isTrending, year, rating, category, title, classN } = show;
   return (
     <>
       <div className={classnames("card")}>
@@ -13,7 +13,7 @@ const Card = ({ show }) => {
         <div
           className={classnames("card-info", { "card-trending": isTrending })}
         >
-          <div>
+          <div >
             <p>{year}</p>
             <p>{rating}</p>
             <p>{category}</p>
