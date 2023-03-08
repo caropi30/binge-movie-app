@@ -5,8 +5,8 @@
 @media (min-width: 200px) and (max-width: 575.98px) {
   .card{
     // width: 500px;
-     position: relative;
- 
+    // position: relative;
+    padding: .5rem;
  
      &-img{
        img{ 
@@ -16,16 +16,30 @@
      }
  
      &-info{
-       position: absolute;
+      // position: absolute;
        bottom: 10%;
        left: 5%;
  
        div {
          display: flex;
+         align-items: center;
          gap: .5rem;
+        p{
+          text-transform: capitalize;
+          font-size: .8rem;
+          &:nth-child(3){
+            display: flex;
+            gap: .4rem;
+           svg{
+             width: 13px;
+           }
+          }
+        }
+        
        }
        h3{
-         font-size: 1.3rem;
+        font-size: 1.05rem;
+        text-transform: capitalize;
        }
      }
    }
@@ -34,8 +48,8 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .card{
     // width: 500px;
-     position: relative;
- 
+    // position: relative;
+    padding: .5rem;
  
      &-img{
        img{ 
@@ -45,7 +59,7 @@
      }
  
      &-info{
-       position: absolute;
+       //position: absolute;
        bottom: 10%;
        left: 5%;
  
