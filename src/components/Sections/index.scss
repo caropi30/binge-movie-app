@@ -2,20 +2,24 @@
 @import "../../scss/base/typography.scss";
 @import "../../scss/utilities/variables.scss";
 
-.trending,
-.recomended{
-    padding: 1rem;
+@media (min-width: 200px) and (max-width: 991.98px) {
+  .trending,
+  .recomended {
+    h2 {
+      margin: 1rem 0 1.5rem 0;
+      font-size: $medium-font;
+      font-weight: $light;
+    }
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .trending, .recomended{
-        h2{
-            font-size: $large-font;
-            font-weight: $light;
-            margin-bottom: 1rem;
-            font-size: .8rem;
-        }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .trending,
+  .recomended {
+    h2 {
+      font-weight: $light;
+      margin-bottom: 1rem;
+      font-size: $large-font;
     }
-
-   
+  }
 }

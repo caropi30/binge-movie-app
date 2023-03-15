@@ -1,86 +1,101 @@
 @import "../../scss/base/reset.scss";
 @import "../../scss/base/typography.scss";
 @import "../../scss/utilities/variables.scss";
-
-@media (min-width: 200px) and (max-width: 991.98px) {
-    .filter  {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        margin: 1.3rem auto;
-            padding: 0.5rem;
-        .svg{
-            width: 30px;
-            height: 30px;
-        }
-        &-input {
-            background-color: transparent;
-            border: none;
-            margin-left: 1.5rem;
-            width: 100%;
-            color: $pure-white;
-            font-family: $lato;
-            font-size: $medium-font;
-            outline: none;
-
-
-        }
+@media (min-width: 200px) and (max-width: 767.98px) {
+  .filter {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1.3rem 0.5rem;
+    padding: 0.5rem;
+    .svg {
+      width: 20px;
+      height: 20px;
     }
+    &-input {
+      background-color: transparent;
+      border: none;
+      margin-left: 1rem;
+      width: 100%;
+      color: $pure-white;
+      font-family: $lato;
+      font-size: $regular-plus-font;
+      outline: none;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .filter {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1.3rem 0.5rem;
+    padding: 0.5rem;
+    .svg {
+      width: 20px;
+      height: 20px;
+    }
+    &-input {
+      background-color: transparent;
+      border: none;
+      margin-left: 1rem;
+      width: 100%;
+      color: $pure-white;
+      font-family: $lato;
+      font-size: $medium-font;
+      outline: none;
+    }
+  }
 }
 
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .filter {
-            display: flex;
-            align-items: center;
-            height: 50px;
-            margin: 1.3rem auto;
-            padding: 0.5rem;
-    
-            .svg {
-                width: 30px;
-                height: 30px;
-            }
-    
-            &-input {
-                background-color: transparent;
-                border: none;
-                margin-left: 1.5rem;
-                width: 100%;
-                color: $pure-white;
-                font-family: $lato;
-                font-size: $medium-font;
-                outline: none;
-    
-    
-            }
-        }
+  .filter {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1.3rem auto;
+    padding: 0.5rem;
+
+    .svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    &-input {
+      background-color: transparent;
+      border: none;
+      margin-left: 1.5rem;
+      width: 100%;
+      color: $pure-white;
+      font-family: $lato;
+      font-size: $large-font;
+      outline: none;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-    .filter {
-            display: flex;
-            align-items: center;
-            height: 50px;
-            margin: 1.3rem auto;
-            padding: 0.5rem;
-    
-            .svg {
-                width: 30px;
-                height: 30px;
-            }
-    
-            &-input {
-                background-color: transparent;
-                border: none;
-                margin-left: 1.5rem;
-                width: 100%;
-                color: $pure-white;
-                font-family: $lato;
-                font-size: $medium-font;
-                outline: none;
-    
-    
-            }
-        }
+  .filter {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1.3rem auto;
+    padding: 0.5rem;
+
+    .svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    &-input {
+      background-color: transparent;
+      border: none;
+      margin-left: 1.5rem;
+      width: 100%;
+      color: $pure-white;
+      font-family: $lato;
+      font-size: $medium-font;
+      outline: none;
+    }
+  }
 }

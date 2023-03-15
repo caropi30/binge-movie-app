@@ -19,7 +19,7 @@
       }
     }
     &-second {
-     @include d-flex-row;
+      @include d-flex-row;
       align-items: center;
       gap: 0;
       padding: 0 1.2rem;
@@ -36,7 +36,7 @@
     justify-content: space-between;
     width: 60px;
     background-color: $semi-dark-blue;
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 1rem;
     border-radius: 10px;
     &-first,
     &-second,
@@ -83,7 +83,7 @@
       align-items: center;
       gap: 1rem;
 
-      &--secondBox-btn{
+      &--secondBox-btn {
         background-color: transparent;
         border: none;
       }

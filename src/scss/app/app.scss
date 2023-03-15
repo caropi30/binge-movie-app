@@ -1,17 +1,20 @@
 @media (min-width: 200px) and (max-width: 991.98px) {
+  .App {
+    width: 95vw;
+    margin: auto;
+  }
 }
 
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .App{
-        display: flex;
-        margin: 1.5rem 1.2rem;
-    }
+  .App {
+    display: flex;
+    margin: 1.5rem 1.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
-    .App {
-            display: flex;
-            padding: 1.5rem 1.2rem;
-        }
+  .App {
+    display: flex;
+    padding: 1.5rem 1.2rem;
+  }
 }

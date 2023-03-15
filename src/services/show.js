@@ -3,7 +3,7 @@ import axios from "axios";
 export async function getShow() {
   try {
     const response = await axios.get(
-      "https://32ac-191-113-224-128.sa.ngrok.io/api/shows"
+      "https://495a-201-189-200-68.sa.ngrok.io/api/shows"
     );
     //console.log(response);
     return response;

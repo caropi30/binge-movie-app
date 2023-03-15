@@ -1,16 +1,13 @@
 @import "../../scss/base/reset.scss";
 @import "../../scss/utilities/variables.scss";
 
-
 @media (min-width: 200px) and (max-width: 991.98px) {
-    header {
-        width: 95vw;
-        margin: 0 auto;
-    }
+  header {
+  }
 }
 
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
 @media (min-width: 1200px) {
 }
