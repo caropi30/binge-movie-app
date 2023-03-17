@@ -5,7 +5,6 @@ import { FilterContent } from "../components/Filter";
 import { CardContainer } from "../components/CardContainer";
 import { useQuery } from "@tanstack/react-query";
 import { getShow } from "../services/show";
-import Account from "./account";
 
 const HomePage = () => {
   const [filterDataInput, setFilterDataInput] = useState("");
@@ -46,7 +45,6 @@ const HomePage = () => {
 
   return (
     <Main shows={shows}>
-      <Account />
       <FilterContent
         shows={shows}
         filterDataInput={filterDataInput}
@@ -62,4 +60,4 @@ const HomePage = () => {
   );
 };
 
-export { HomePage };
+export default HomePage

@@ -1,23 +1,14 @@
 import React, { useState, useEffect } from 'react'
 
 const Small = ({isLogedIn, setIsLogedIn}) => {
+  const loginHandler = () =>{
+    console.log("click")
+  }
 
-    const loginHandler = (e) => {
-        e.preventDefault();
-        console.log("hice click en signup");
-        console.log(isLogedIn);
-        setIsLogedIn(false)
-      };
+  const signUpHandler = () =>{
+    console.log("click")
+  }
     
-      const signUpHandler = () =>{
-        console.log("hice click en login");
-        console.log(isLogedIn);
-        setIsLogedIn(true)
-      }
-    
-      useEffect(()=>{
-        signUpHandler()
-      },[isLogedIn])
     
   return (
     <>

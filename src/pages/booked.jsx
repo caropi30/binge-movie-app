@@ -16,4 +16,6 @@ const BookedPage = () => {
     
 }
 
+export default BookedPage
+
 export {BookedPage};

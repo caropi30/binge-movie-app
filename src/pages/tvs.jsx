@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import { Main } from "../components/Main";
 
 
@@ -17,4 +16,4 @@ const TvsPage = () => {
     
 }
 
-export {TvsPage};
+export default TvsPage
