@@ -10,6 +10,7 @@ import {
 } from "../Icons/index";
 import { UserButton } from "../Buttons/UserButton";
 import usrImg from "../../assets/usr.png";
+import {createBrowserRouter, RouterProvider, BrowserRouter } from "react-router-dom";
 
 const NavigationBar = () => {
   return (

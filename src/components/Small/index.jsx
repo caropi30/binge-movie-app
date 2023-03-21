@@ -3,10 +3,12 @@ import React, { useState, useEffect } from 'react'
 const Small = ({isLogedIn, setIsLogedIn}) => {
   const loginHandler = () =>{
     console.log("click")
+    setIsLogedIn(false)
   }
 
   const signUpHandler = () =>{
     console.log("click")
+    setIsLogedIn(true)
   }
     
     
