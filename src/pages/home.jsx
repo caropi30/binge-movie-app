@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Main } from "../components/Main";
 import { Section } from "../components/Sections";
 import { FilterContent } from "../components/Filter";
 import { CardContainer } from "../components/CardContainer";
 import { useQuery } from "@tanstack/react-query";
-import { getShow } from "../services/show";
+import { getShow } from "../services/data";
 
 const HomePage = () => {
   const [filterDataInput, setFilterDataInput] = useState("");
@@ -15,23 +15,21 @@ const HomePage = () => {
     queryFn: getShow,
   });
 
-  useEffect(()=> {
-    if (data){
-      setFilterItems(data.data.data)
+  useEffect(() => {
+    if (data) {
+      setFilterItems(data.data.data);
     }
-  
-}, [])
+  }, []);
 
-  useEffect(()=> {
-      if (data){
-        const filterShows = data.data.data.filter(show => show.title.toLowerCase().includes(filterDataInput));
-        console.log(filterShows)
-        setFilterItems(filterShows)
-      }
-    
-  }, [filterDataInput])
-  
- 
+  useEffect(() => {
+    if (data) {
+      const filterShows = data.data.data.filter((show) =>
+        show.title.toLowerCase().includes(filterDataInput)
+      );
+      console.log(filterShows);
+      setFilterItems(filterShows);
+    }
+  }, [filterDataInput]);
 
   if (isLoading) {
     return <span>Loading...</span>;
@@ -54,10 +52,10 @@ const HomePage = () => {
                 <CardContainer classN="card-trending" isTrending={isTrending} /> 
             </Section> */}
       <Section classN="recomended" title="Recomended for you">
-        <CardContainer shows={filterItems}  />
+        <CardContainer shows={filterItems} />
       </Section>
     </Main>
   );
 };
 
-export default HomePage
+export default HomePage;
