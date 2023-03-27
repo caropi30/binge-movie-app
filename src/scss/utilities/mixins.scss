@@ -32,3 +32,9 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
+
+@mixin hover-transform {
+    transform: scale(1);
+    transition-duration: 4s;
+    transition-delay: 2s;
+}

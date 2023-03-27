@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://f25a-191-113-224-128.sa.ngrok.io/";
+const BASE_URL = "https://172d-201-189-203-177.sa.ngrok.io/";
 
 export async function getShow() {
   try {

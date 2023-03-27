@@ -3,7 +3,7 @@ import "./scss/app/app.scss";
 import { Header } from "./components/Header";
 import { NavigationBar } from "./components/Navigation";
 import HomePage  from "./pages/home";
-import { Route, Routes, Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 
 

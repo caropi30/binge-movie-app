@@ -8,9 +8,10 @@ const MoviesPage = () => {
             {/* <Section classN="trending" title="Trending">
                 <CardContainer classN="card-trending" isTrending={isTrending} /> 
             </Section> */}
-            <Section classN="recomended" title="Recomended for you">
+            {/* <Section classN="recomended" title="Recomended for you">
                 <CardContainer />
-            </Section>
+            </Section> */}
+            <h1>MOVIES</h1>
         </Main>
     )
     
