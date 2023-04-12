@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import { Main } from "../components/Main";
 import Login from "../components/Login";
+import { LogoMenuIcon } from "../components/Icons";
 
 const Account = () => {
     const [isLogedIn, setIsLogedIn] = useState(true)
     return(
         <Main>
-           <Login isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn}/>
+            <Login isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn}/>
         </Main>
     )
     

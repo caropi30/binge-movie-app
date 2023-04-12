@@ -5,7 +5,7 @@ import { Header } from "./components/Header";
 import { NavigationBar } from "./components/Navigation";
 import HomePage  from "./pages/home";
 import BookedPage from "./pages/booked";
-import Account from "./pages/account";
+import Account from "./pages/auth";
 import MoviesPage from "./pages/movies";
 import TvsPage from "./pages/tvs";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 
   ]},
   {
-    path: "/account",
+    path: "/auth",
     element:<Account />,
   },
 ]);

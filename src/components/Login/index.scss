@@ -1,0 +1,88 @@
+@import "../../scss/base/reset.scss";
+@import "../../scss/base/typography.scss";
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixins.scss";
+
+
+
+@media (min-width: 200px) and (max-width: 575.98px) {
+    .auth{
+        @include w-h-100;
+        @include d-flex-column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin-bottom: 2rem;
+        }
+        &-form{
+            @include w-80;
+            margin:  0 auto;
+            background-color: $semi-dark-blue;
+            padding: 1.5rem;
+            border-radius: 15px;
+    
+        }
+    }
+}
+  
+@media (min-width: 576px) and (max-width: 991.98px){
+    .auth{
+        @include w-h-100;
+        @include d-flex-column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin-bottom: 2rem;
+        }
+        &-form{
+            @include w-60;
+            margin:  0 auto;
+            background-color: $semi-dark-blue;
+            padding: 1.5rem;
+            border-radius: 15px;
+    
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .auth{
+        @include w-h-100;
+        @include d-flex-column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin-bottom: 2rem;
+        }
+        &-form{
+            width: 40%;
+            margin:  0 auto;
+            background-color: $semi-dark-blue;
+            padding: 1.5rem;
+            border-radius: 15px;
+    
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .auth{
+        @include w-h-100;
+        @include d-flex-column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            margin-bottom: 2rem;
+        }
+        &-form{
+            @include w-25;
+            margin:  0 auto;
+            background-color: $semi-dark-blue;
+            padding: 1.5rem;
+            border-radius: 15px;
+    
+        }
+    }
+
+}
+  

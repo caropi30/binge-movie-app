@@ -1,0 +1,15 @@
+@import "../../scss/base/reset.scss";
+@import "../../scss/base/typography.scss";
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixins.scss";
+
+
+small{
+    font-family: $outfit;
+    text-align: center;
+    span {
+        margin-left: .5rem;
+        color: $red;
+    }
+}
+  

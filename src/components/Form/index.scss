@@ -1,3 +1,60 @@
 @import "../../scss/base/reset.scss";
 @import "../../scss/base/typography.scss";
 @import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixins.scss";
+
+form {
+  @include d-flex-column;
+  font-family: $outfit;
+  font-weight: 300;
+  label {
+    @include w-100;
+    input {
+      @include w-100;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid $greyish-blue;
+      margin: 0.5rem 0;
+      color: $pure-white;
+      border-radius: 0;
+      &::placeholder {
+        color: $pure-white;
+        font-weight: $light;
+      }
+    }
+  }
+  input {
+    @include bg-red;
+    border: none;
+    color: $pure-white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  form {
+    @include d-flex-column;
+    font-family: $outfit;
+    font-weight: 300;
+    label {
+      @include w-100;
+      input {
+        &:hover {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $pure-white;
+          }
+      }
+    }
+    input {
+      &:hover {
+        background-color: $pure-white;
+        border: none;
+        color: $pure-white;
+        cursor: pointer;
+      }
+    }
+  }
+}

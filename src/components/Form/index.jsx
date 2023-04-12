@@ -3,7 +3,7 @@ import "./index.scss";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import { useMutation } from "@tanstack/react-query";
-import { AUTH } from "../../services/data";
+import { AUTH_LOGIN, AUTH_SIGNUP } from "../../services/data";
 
 const Form = ({ isLogedIn }) => {
   const [error, setError] = useState(false);
@@ -14,12 +14,14 @@ const Form = ({ isLogedIn }) => {
   const [formDataSignUp, setFormDataSignUp] = useState({
     email: "",
     password: "",
-    repeatPassword: "",
+    confirmPassword: "",
   });
 
+
+  
   const mutation = useMutation({
-    mutationFn: (newLoginData) => {
-      return axios.post(AUTH, newLoginData);
+    mutationFn: (newAuthData) => {
+      return axios.post(isLogedIn ? AUTH_LOGIN : AUTH_SIGNUP , newAuthData);
     },
   });
 
@@ -53,7 +55,7 @@ const Form = ({ isLogedIn }) => {
   };
 
   const passwordValidation = () => {
-    if (formDataSignUp.password === formDataSignUp.repeatPassword) {
+    if (formDataSignUp.password === formDataSignUp.confirmPassword) {
       setError(true);
     } else {
       setError(false);
@@ -103,7 +105,7 @@ const Form = ({ isLogedIn }) => {
               onChange={handleChange}
             />
           </label>
-          <input type="submit" />
+          <input type="submit" placeholder="Login to your account" />
         </form>
       ) : (
         <form className="loginForm" onSubmit={handleFormData}>
@@ -127,18 +129,18 @@ const Form = ({ isLogedIn }) => {
               onChange={handleChange}
             />
           </label>
-          <label className="loginForm--label" htmlFor="repeatPassword">
+          <label className="loginForm--label" htmlFor="confirmPassword">
             <input
               className="loginForm--label-input"
               type="password"
-              name="repeatPassword"
-              id="repeatPassword"
+              name="confirmPassword"
+              id="confirmPassword"
               placeholder="Password"
               onChange={handleChange}
             />
           </label>
           {error && <p>Las contraseñas no coinciden.</p>}
-          <input type="submit" />
+          <input type="submit" placeholder="Create an account" />
         </form>
       )}
       {mutation.isError ? (

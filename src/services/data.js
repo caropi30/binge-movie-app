@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://172d-201-189-203-177.sa.ngrok.io/";
+const BASE_URL = "https://d968-201-189-213-77.ngrok-free.app/";
 
 export async function getShow() {
   try {
@@ -12,4 +12,6 @@ export async function getShow() {
   }
 }
 
-export const AUTH = `${BASE_URL}api/auth/login`;
+export const AUTH_LOGIN = `${BASE_URL}api/auth/login`;
+
+export const AUTH_SIGNUP = `${BASE_URL}api/auth/signup`;

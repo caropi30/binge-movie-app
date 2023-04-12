@@ -1,4 +1,4 @@
-@mixin d-flex{
+@mixin d-flex {
     display: flex;
 }
 
@@ -11,8 +11,26 @@
     display: flex;
     flex-direction: row;
 }
+
+@mixin w-h-100 {
+    width: 100%;
+    height: 100%;
+}
+
 @mixin w-100{
     width: 100%;
+}
+
+@mixin w-80{
+    width: 80%;
+}
+
+@mixin w-60{
+    width: 60%;
+}
+
+@mixin w-25{
+    width: 25%;
 }
 
 @mixin h-100{
@@ -37,4 +55,12 @@
     transform: scale(1);
     transition-duration: 4s;
     transition-delay: 2s;
+}
+
+@mixin bg-main-color{
+    background-color: $dark-blue;
+}
+
+@mixin bg-red{
+    background-color: $red
 }

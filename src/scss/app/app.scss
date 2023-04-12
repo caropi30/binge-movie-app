@@ -1,7 +1,12 @@
+@import "../../scss/utilities/mixins.scss";
+
 @media (min-width: 200px) and (max-width: 991.98px) {
   .App {
     width: 95vw;
     margin: auto;
+  }
+  #root{
+    @include w-h-100;
   }
 }
 
@@ -9,6 +14,9 @@
   .App {
     display: flex;
     margin: 1.5rem 1.2rem;
+  }
+  #root{
+    @include w-h-100;
   }
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-export const LogoMenuIcon = (color) => {
+export const LogoMenuIcon = (color="#FC4747", width="33", height="27") => {
   return (
     <svg
-      width="33"
-      height="27"
+      width={width}
+      height={height}
       viewBox="0 0 33 27"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

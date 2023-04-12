@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "./index.scss";
 
 const Small = ({isLogedIn, setIsLogedIn}) => {
   const loginHandler = () =>{
@@ -16,7 +17,7 @@ const Small = ({isLogedIn, setIsLogedIn}) => {
     <>
         <>{isLogedIn ? 
             <small>Don't you have an accout?<span onClick={loginHandler}>Sign Up</span></small>
-        : <small>Already have an accout?<span onClick={signUpHandler}>Login</span></small>}</>
+        :   <small>Already have an accout?<span onClick={signUpHandler}>Login</span></small>}</>
         </>
   )
 }
