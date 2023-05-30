@@ -1,16 +1,15 @@
-import React, {useState} from "react";
-import { Main } from "../components/Main";
-import Login from "../components/Login";
-import { LogoMenuIcon } from "../components/Icons";
+import React, { useState } from 'react'
+import { Main } from '../components/Main'
+import Login from '../components/Login'
+import { LogoMenuIcon } from '../components/Icons'
 
 const Account = () => {
-    const [isLogedIn, setIsLogedIn] = useState(true)
-    return(
+  const [isLogedIn, setIsLogedIn] = useState(true)
+  return (
         <Main>
             <Login isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn}/>
         </Main>
-    )
-    
+  )
 }
 
-export default Account;
+export default Account

@@ -1,5 +1,5 @@
-import React from "react";
-import "./index.scss";
+import React from 'react'
+import './index.scss'
 
 const Section = ({ title, classN, content, children }) => {
   return (
@@ -9,7 +9,7 @@ const Section = ({ title, classN, content, children }) => {
         {children}
       </section>
     </>
-  );
-};
+  )
+}
 
-export { Section };
+export { Section }

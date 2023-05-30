@@ -1,5 +1,5 @@
-import React from "react";
-import "./index.scss";
+import React from 'react'
+import './index.scss'
 
 const NavButton = ({ text, href, icon, classN }) => {
   return (
@@ -8,7 +8,7 @@ const NavButton = ({ text, href, icon, classN }) => {
       {icon}
       <a href={href}></a>
     </button>
-  );
-};
+  )
+}
 
-export { NavButton };
+export { NavButton }

@@ -1,18 +1,17 @@
-import {React} from "react";
-import { useState } from "react";
-import { SearchIcon } from "../Icons";
-import "./index.scss";
+import { React, useState } from 'react'
 
+import { SearchIcon } from '../Icons'
+import './index.scss'
 
-const FilterContent = ({ filterDataInput, setFilterDataInput}) => {
+const FilterContent = ({ filterDataInput, setFilterDataInput }) => {
   const handleChange = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     setFilterDataInput(e.target.value)
-    //console.log(e.target.value);
-    //console.log(typeof filterData)
-  };
+    // console.log(e.target.value);
+    // console.log(typeof filterData)
+  }
 
-  const handleItemFilter = () =>{}
+  const handleItemFilter = () => {}
   return (
     <>
       <label className="filter">
@@ -26,7 +25,7 @@ const FilterContent = ({ filterDataInput, setFilterDataInput}) => {
         />
       </label>
     </>
-  );
-};
+  )
+}
 
-export { FilterContent };
+export { FilterContent }

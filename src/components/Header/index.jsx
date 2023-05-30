@@ -1,12 +1,12 @@
-import React from "react";
-import "./index.scss";
+import React from 'react'
+import './index.scss'
 
 const Header = ({ children }) => {
   return (
     <>
       <header>{children}</header>
     </>
-  );
-};
+  )
+}
 
-export { Header };
+export { Header }

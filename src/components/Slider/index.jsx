@@ -1,9 +1,9 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+import React from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
 
-function SimpleSlider({ children }) {
+function SimpleSlider ({ children }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,27 +19,27 @@ function SimpleSlider({ children }) {
           slidesToShow: 6,
           slidesToScroll: 6,
           infinite: true,
-          dots: true,
-        },
+          dots: true
+        }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
-        },
+          initialSlide: 2
+        }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-  return <Slider {...settings}>{children}</Slider>;
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
+  return <Slider {...settings}>{children}</Slider>
 }
 
-export { SimpleSlider };
+export { SimpleSlider }

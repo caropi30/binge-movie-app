@@ -1,22 +1,20 @@
-import React from "react";
-import { Main } from "../components/Main";
-
+import React from 'react'
+import { Main } from '../components/Main'
 
 const BookedPage = () => {
-    return(
+  return (
         <Main>
             {/* <Section classN="trending" title="Trending">
-                <CardContainer classN="card-trending" isTrending={isTrending} /> 
+                <CardContainer classN="card-trending" isTrending={isTrending} />
             </Section> */}
             {/* <Section classN="recomended" title="Recomended for you">
                 <CardContainer />
             </Section> */}
             <h1>BOOKED</h1>
         </Main>
-    )
-    
+  )
 }
 
 export default BookedPage
 
-export {BookedPage};
+export { BookedPage }

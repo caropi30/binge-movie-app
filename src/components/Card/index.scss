@@ -9,6 +9,16 @@
     grid-template-rows: 70% 30%;
     row-gap: 0.5rem;
     padding: 0.5rem;
+    position: relative;
+
+    &-marked{
+      position: absolute;
+      background-color: transparent;
+      top: 20px;
+      right: 20px;
+      border: none;
+    }
+
 
     &-img {
       @include w-100;
@@ -52,6 +62,15 @@
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
     padding: 0.5rem;
+    position: relative;
+    
+    &-marked{
+      position: absolute;
+      background-color: transparent;
+      top: 20px;
+      right: 20px;
+      border: none;
+    }
 
     &-img {
       width: 100%;
@@ -94,6 +113,15 @@
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
     padding: 0.5rem;
+    position: relative;
+
+    &-marked{
+      position: absolute;
+      background-color: transparent;
+      top: 20px;
+      right: 20px;
+      border: none;
+    }
 
     &-img {
       width: 100%;
@@ -135,6 +163,13 @@
     // width: 500px;
     position: relative;
 
+    &-marked{
+      position: absolute;
+      background-color: transparent;
+      top: 20px;
+      right: 20px;
+      border: none;
+    }
 
     &-img{
       img{ 
