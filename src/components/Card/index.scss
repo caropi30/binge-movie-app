@@ -175,6 +175,7 @@
       img{ 
         width: 100%;
         border-radius: 10px;
+        height: 22vh;
       }
     }
 
@@ -185,10 +186,15 @@
 
       div {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
       }
       h3 {
         font-size: 1.3rem;
+      }
+      p {
+        display: flex;
+        gap: .5rem;        
       }
     }
   }

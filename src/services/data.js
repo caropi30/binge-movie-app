@@ -1,11 +1,15 @@
 import axios from 'axios'
+import Cookies from 'js-cookie'
 
-const BASE_URL = 'https://0777-201-189-194-197.ngrok-free.app/'
+const BASE_URL = 'https://b077-201-189-204-226.ngrok-free.app/'
 
-export async function getShow () {
+const TOKEN = Cookies.get('JWT')
+
+export async function getShow (category) {
   try {
-    const response = await axios.get(`${BASE_URL}api/shows`)
-    // console.log(response);
+    const response = category
+      ? await axios.get(`${BASE_URL}api/shows?category=${category}`)
+      : await axios.get(`${BASE_URL}api/shows`)
     return response
   } catch (error) {
     console.error(error)
@@ -15,3 +19,11 @@ export async function getShow () {
 export const AUTH_LOGIN = `${BASE_URL}api/auth/login`
 
 export const AUTH_SIGNUP = `${BASE_URL}api/auth/signup`
+
+export async function putShow (id) {
+  const { data } = await axios.put(`${BASE_URL}api/users/favorite-shows`, { showId: id }, {
+    headers: {
+      Authorization: `Bearer ${TOKEN}`
+    }
+  })
+}

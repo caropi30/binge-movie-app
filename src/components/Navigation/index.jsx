@@ -23,7 +23,9 @@ const NavigationBar = () => {
     <>
       <div className="nav">
         <div className="nav-first">
-          <NavButton icon={LogoMenuIcon()} />
+          <NavLink to="auth">
+            <NavButton icon={LogoMenuIcon()} />
+          </NavLink>
         </div>
         <div className="nav-second">
           <NavLink to="/">

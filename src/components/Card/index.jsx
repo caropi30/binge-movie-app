@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import classnames from 'classnames'
 import './index.scss'
 import { FilmMenuIcon, TvMenuIcon, Oval, MarkedItem } from '../Icons/index'
+import { useMutation } from '@tanstack/react-query'
+import { putShow } from '../../services/data'
 
 const Card = ({ show }) => {
   const { id, thumbnail, isTrending, year, rating, category, title, classN } = show
@@ -13,8 +15,16 @@ const Card = ({ show }) => {
 
   const [markedItem, setMarkedItem] = useState(false)
 
+  const mutation = useMutation({ mutationFn: putShow })
+
   const handleMarker = () => {
-    setMarkedItem(!markedItem)
+    console.log('click handler')
+    try {
+      mutation.mutate(id)
+      setMarkedItem(true)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (

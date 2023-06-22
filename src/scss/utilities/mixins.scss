@@ -48,7 +48,7 @@
 }
 @mixin d-grid-4{
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 @mixin hover-transform {

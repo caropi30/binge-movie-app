@@ -3,7 +3,8 @@ import './index.scss'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
 import { useMutation } from '@tanstack/react-query'
-import { AUTH_LOGIN, AUTH_SIGNUP } from '../../services/data'
+import { AUTH_LOGIN, AUTH_SIGNUP, putShow} from '../../services/data'
+import Cookies from 'js-cookie'
 
 const Form = ({ isLogedIn }) => {
   const [error, setError] = useState(false)
@@ -60,13 +61,16 @@ const Form = ({ isLogedIn }) => {
     }
   }
 
-  const handleFormData = (e) => {
+  const handleFormData = async (e) => {
     e.preventDefault()
     if (isLogedIn) {
-      mutation.mutate(formDataLogin)
+      const data = await mutation.mutateAsync(formDataLogin)
+      console.log(data)
+      Cookies.set('JWT', data.data.token)
       emailValidation()
     } else {
-      mutation.mutate(formDataSignUp)
+      const data = await mutation.mutate(formDataSignUp)
+      console.log(data)
       emailValidation()
       passwordValidation()
     }
