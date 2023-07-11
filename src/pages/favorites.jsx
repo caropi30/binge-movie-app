@@ -6,7 +6,7 @@ import { CardContainer } from '../components/CardContainer'
 import { useSearchFilter } from '../hooks/useSearchFilter'
 import dataFavorites from '../seed-data/data-favorite'
 
-const BookedPage = () => {
+const FavoritesPage = () => {
   const {
     filterDataInput,
     setFilterDataInput,
@@ -41,4 +41,4 @@ const BookedPage = () => {
   )
 }
 
-export default BookedPage
+export default FavoritesPage

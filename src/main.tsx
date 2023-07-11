@@ -8,6 +8,7 @@ import BookedPage from "./pages/booked";
 import Account from "./pages/auth";
 import MoviesPage from "./pages/movies";
 import TvsPage from "./pages/tvs";
+import FavoritesPage from "./pages/favorites"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {createBrowserRouter, RouterProvider, BrowserRouter } from "react-router-dom";
 
@@ -16,9 +17,6 @@ const queryClient = new QueryClient();
 const router = createBrowserRouter([
  { path: "/",
     element: <App />,
-    // errorElement: <ErrorPage />,
-    // loader: rootLoader(queryClient),
-    // action: rootAction(queryClient),
   children:[
     {
       index: true,
@@ -36,7 +34,10 @@ const router = createBrowserRouter([
     path: "/tv",
     element:<TvsPage />,
   },
-
+  {
+    path: "/tv",
+    element:<FavoritesPage />,
+  },
   ]},
   {
     path: "/auth",

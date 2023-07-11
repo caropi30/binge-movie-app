@@ -4,6 +4,7 @@ import { Section } from '../components/Sections'
 import { FilterContent } from '../components/Filter'
 import { CardContainer } from '../components/CardContainer'
 import { useSearchFilter } from '../hooks/useSearchFilter'
+import dataFavorites from '../seed-data/data-favorite'
 
 const HomePage = () => {
   const {
@@ -14,7 +15,7 @@ const HomePage = () => {
     isError,
     data,
     error
-  } = useSearchFilter('movie')
+  } = useSearchFilter()
 
   if (isLoading) {
     return <span>Loading...</span>
@@ -24,12 +25,11 @@ const HomePage = () => {
     return <span>Error: {error.message}</span>
   }
 
-  const shows = data.data.data
 
   return (
-    <Main shows={shows}>
+    <Main>
       <FilterContent
-        shows={shows}
+        shows={filterItems}
         filterDataInput={filterDataInput}
         setFilterDataInput={setFilterDataInput}
       />

@@ -1,17 +1,43 @@
 import React from 'react'
 import { Main } from '../components/Main'
+import { Section } from '../components/Sections'
+import { FilterContent } from '../components/Filter'
+import { CardContainer } from '../components/CardContainer'
+import { useSearchFilter } from '../hooks/useSearchFilter'
+import dataFavorites from '../seed-data/data-favorite'
 
 const TvsPage = () => {
+  const {
+    filterDataInput,
+    setFilterDataInput,
+    filterItems,
+    isLoading,
+    isError,
+    data,
+    error
+  } = useSearchFilter('tv-show')
+
+  if (isLoading) {
+    return <span>Loading...</span>
+  }
+
+  if (isError) {
+    return <span>Error: {error.message}</span>
+  }
+
+  const shows = data.data.data
+
   return (
-        <Main>
-            {/* <Section classN="trending" title="Trending">
-                <CardContainer classN="card-trending" isTrending={isTrending} />
-            </Section> */}
-            {/* <Section classN="recomended" title="Recomended for you">
-                <CardContainer />
-            </Section> */}
-            <h1>TV</h1>
-        </Main>
+    <Main shows={shows}>
+      <FilterContent
+        shows={shows}
+        filterDataInput={filterDataInput}
+        setFilterDataInput={setFilterDataInput}
+      />
+      <Section classN="recomended" title="Recomended for you">
+        <CardContainer shows={filterItems} />
+      </Section>
+    </Main>
   )
 }
 

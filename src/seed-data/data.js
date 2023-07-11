@@ -1,4 +1,4 @@
-export const shows = [
+export const showsData = [
   {
     title: 'The last of us',
     thumbnail:

@@ -13,14 +13,14 @@ const Card = ({ show }) => {
     movie: TvMenuIcon('#fff')
   }
 
-  const [markedItem, setMarkedItem] = useState(false)
+  const [markedItem, setMarkedItem] = useState(show.favorite)
 
   const mutation = useMutation({ mutationFn: putShow })
 
-  const handleMarker = () => {
+  const handleMarker = async () => {
     console.log('click handler')
     try {
-      mutation.mutate(id)
+      await mutation.mutateAsync(id)
       setMarkedItem(true)
     } catch (error) {
       console.log(error)
@@ -29,7 +29,7 @@ const Card = ({ show }) => {
 
   return (
     <>
-      <div className={classnames('card')}>
+      <div id={id} className={classnames('card')}>
         <button className="card-marked" onClick={handleMarker}>{MarkedItem(markedItem ? '#fff' : 'none')}</button>
         <div className="card-img">
           <img src={thumbnail} />

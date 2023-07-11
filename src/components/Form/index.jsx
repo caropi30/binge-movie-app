@@ -3,7 +3,7 @@ import './index.scss'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
 import { useMutation } from '@tanstack/react-query'
-import { AUTH_LOGIN, AUTH_SIGNUP, putShow} from '../../services/data'
+import { AUTH_LOGIN, AUTH_SIGNUP, putShow } from '../../services/data'
 import Cookies from 'js-cookie'
 
 const Form = ({ isLogedIn }) => {

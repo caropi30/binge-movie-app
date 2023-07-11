@@ -7,11 +7,7 @@ const FilterContent = ({ filterDataInput, setFilterDataInput }) => {
   const handleChange = (e) => {
     e.preventDefault()
     setFilterDataInput(e.target.value)
-    // console.log(e.target.value);
-    // console.log(typeof filterData)
   }
-
-  const handleItemFilter = () => {}
   return (
     <>
       <label className="filter">

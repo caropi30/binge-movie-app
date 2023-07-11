@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 export const LogoMenuIcon = (
-  color = "#FC4747",
-  width = "33",
-  height = "27"
+  color = '#FC4747',
+  width = '33',
+  height = '27'
 ) => {
   return (
     <svg
@@ -18,8 +18,8 @@ export const LogoMenuIcon = (
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
 export const BookedMenuIcon = (color) => {
   return (
@@ -35,8 +35,8 @@ export const BookedMenuIcon = (color) => {
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
 export const FilmMenuIcon = (color) => {
   return (
@@ -54,8 +54,8 @@ export const FilmMenuIcon = (color) => {
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
 export const MainMenuIcon = (color) => {
   return (
@@ -73,8 +73,8 @@ export const MainMenuIcon = (color) => {
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
 export const TvMenuIcon = (color) => {
   return (
@@ -92,8 +92,8 @@ export const TvMenuIcon = (color) => {
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
 export const SearchIcon = (color) => {
   return (
@@ -111,8 +111,8 @@ export const SearchIcon = (color) => {
         fill="white"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const Oval = (color) => {
   return (

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
 
-const BASE_URL = 'https://b077-201-189-204-226.ngrok-free.app/'
+const BASE_URL = 'https://9a5c-201-246-59-217.ngrok-free.app/'
 
 const TOKEN = Cookies.get('JWT')
 
