@@ -4,4 +4,4 @@ Este es un proyecto que desarrolle junto con [Alfonsina Lizardo](https://github.
 
 Este challenge está divido en FrontEnd y Backend, los cuales se trabajaron de manera paralela en este repo (que estás leyendo) y en el repo de [@alais29](https://github.com/Alais29/binge-movies-backend) en la parte del back.
 
-Echale un vistazo para que conzcas nuestro trabajo en conjunto!!
+Echale un vistazo para que conozcas nuestro trabajo en conjunto!!
