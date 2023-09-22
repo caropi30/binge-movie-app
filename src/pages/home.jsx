@@ -4,7 +4,6 @@ import { Section } from '../components/Sections'
 import { FilterContent } from '../components/Filter'
 import { CardContainer } from '../components/CardContainer'
 import { useSearchFilter } from '../hooks/useSearchFilter'
-import dataFavorites from '../seed-data/data-favorite'
 
 const HomePage = () => {
   const {
@@ -24,7 +23,6 @@ const HomePage = () => {
   if (isError) {
     return <span>Error: {error.message}</span>
   }
-
 
   return (
     <Main>

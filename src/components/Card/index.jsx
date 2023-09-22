@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import './index.scss'
 import { FilmMenuIcon, TvMenuIcon, Oval, MarkedItem } from '../Icons/index'
 import { useMutation } from '@tanstack/react-query'
-import { putShow } from '../../services/data'
+import { putShow } from '../../services/favorites'
 
 const Card = ({ show }) => {
   const { id, thumbnail, isTrending, year, rating, category, title, classN } = show

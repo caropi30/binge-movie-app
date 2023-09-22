@@ -22,27 +22,27 @@ const router = createBrowserRouter([
       index: true,
       element: <HomePage />,
     },
-  {
-    path: "/booked",
-    element:<BookedPage />,
-  },
-  {
-    path: "/movies",
-    element:<MoviesPage />,
-  },
-  {
-    path: "/tv",
-    element:<TvsPage />,
-  },
-  {
-    path: "/tv",
-    element:<FavoritesPage />,
-  },
-  ]},
-  {
-    path: "/auth",
-    element:<Account />,
-  },
+    {
+      path: "/booked",
+      element:<BookedPage />,
+    },
+    {
+      path: "/movies",
+      element:<MoviesPage />,
+    },
+    {
+      path: "/tv",
+      element:<TvsPage />,
+    },
+    {
+      path: "/auth",
+      element:<Account />,
+    },
+    ]},
+    {
+      path: "/auth",
+      element:<Account />,
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

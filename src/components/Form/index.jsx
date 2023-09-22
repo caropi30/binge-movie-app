@@ -3,7 +3,8 @@ import './index.scss'
 import axios from 'axios'
 import { useNavigate } from 'react-router'
 import { useMutation } from '@tanstack/react-query'
-import { AUTH_LOGIN, AUTH_SIGNUP, putShow } from '../../services/data'
+import { AUTH_LOGIN, AUTH_SIGNUP } from '../../services/data'
+import { putShow } from '../../services/favorites'
 import Cookies from 'js-cookie'
 
 const Form = ({ isLogedIn }) => {
@@ -66,7 +67,7 @@ const Form = ({ isLogedIn }) => {
     if (isLogedIn) {
       const data = await mutation.mutateAsync(formDataLogin)
       console.log(data)
-      Cookies.set('JWT', data.data.token)
+      Cookies.set('JWT', data.data.token, { expires: 1 })
       emailValidation()
     } else {
       const data = await mutation.mutate(formDataSignUp)

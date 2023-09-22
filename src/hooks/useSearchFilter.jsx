@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { getShow } from '../services/data'
+import { getFavoriteShows } from '../services/favorites'
 import dataFavorites from '../seed-data/data-favorite'
 
 export const useSearchFilter = (category) => {
@@ -13,10 +14,17 @@ export const useSearchFilter = (category) => {
     queryFn: () => getShow(category)
   })
 
+  const { data: dataFavoriteShows, error: errorFavoriteShows } = useQuery({
+    queryKey: ['favShows'],
+    queryFn: () => getFavoriteShows()
+  })
+
   useEffect(() => {
-    if (data) {
+    console.log('entre al use effect 1')
+    if (data && dataFavoriteShows) {
+      console.log('entre al if del use effect 1')
       const shows = data.data.data
-      const favorites = dataFavorites
+      const favorites = dataFavoriteShows.data.data
       const newShowsToFavorite = shows.map(show => {
         const findFavorite = favorites.find((favShow) => favShow.id === show.id)
 
@@ -27,18 +35,24 @@ export const useSearchFilter = (category) => {
         }
         return show
       })
-
       setFilterItems(newShowsToFavorite)
       isSetProcessedData(newShowsToFavorite)
     }
-  }, [])
+
+    if (data && errorFavoriteShows) {
+      console.log('entre al segundo if del use effect 1')
+      setFilterItems(data.data.data)
+      isSetProcessedData(data.data.data)
+      console.log('data normal', data)
+    }
+  }, [data, dataFavoriteShows])
 
   useEffect(() => {
+    console.log('entre al  use effect 2')
     if (data) {
       const filterShows = processedData.filter((show) =>
         show.title.toLowerCase().includes(filterDataInput)
       )
-      // console.log(filterShows)
       setFilterItems(filterShows)
     }
   }, [filterDataInput])

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Main } from '../components/Main'
 import Login from '../components/Login'
-import { LogoMenuIcon } from '../components/Icons'
+//import { LogoMenuIcon } from '../components/Icons'
 import { NavLink } from 'react-router-dom'
 
 const Account = () => {
